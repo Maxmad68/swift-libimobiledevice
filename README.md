@@ -1,4 +1,5 @@
-#swift-libimobiledevice
+# swift-libimobiledevice
+
 swift-libimobiledevice is a proof-of-concept of a Swift project embedding libimobiledevice, so the app can be run even if libimobiledevice isn't installed.
 
 ## Default project
@@ -85,7 +86,7 @@ libimobiledevice-1.0.6.dylib:
 ```
 As we can see, the dependencies paths start with "/usr/local/opt" to refear to other dylibs, which is not what we want, since we included all dylibs to the Xcode project.
 
-To fix this, open your Xcode project main folder in the Finder, and copy to it the Python file you can download here(TODO).
+To fix this, open your Xcode project main folder in the Finder, and copy to it the Python file you can download [here](https://github.com/Maxmad68/swift-libimobiledevice/blob/master/rpathDylibs.py).
 
 Open a terminal, and execute those commands:
 
